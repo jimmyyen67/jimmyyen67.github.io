@@ -13,3 +13,9 @@ $(window).scroll(function () {
   }
   position = scroll;
 });
+
+function toSectionTwo() {
+  $('html, body').animate({
+    scrollTop: ($('#sectionTwo').offset().top)
+  }, 500);
+}

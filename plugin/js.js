@@ -19,3 +19,8 @@ function toSectionTwo() {
     scrollTop: ($('#sectionTwo').offset().top)
   }, 500);
 }
+function toSectionThree() {
+  $('html, body').animate({
+    scrollTop: ($('#sectionThree').offset().top)
+  }, 500);
+}

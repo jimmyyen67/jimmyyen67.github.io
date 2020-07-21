@@ -52,55 +52,66 @@
 }
 
 .sectionTwo {
-  display: flex;
-  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #33333388;
 }
-.introduce {
-  display: inline-block;
-  height: 350px;
-  width: 50%;
-  background: #333;
+.au {
   position: relative;
-}
-.skills {
-  background-image: url("../image/skills.png");
+  width: 100%;
+  height: 300px;
+  background-image: url("../image/backpacker.jpg");
+  background-size: 80%;
   background-position: center;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: 2;
+  margin: 2rem 0rem 0rem 0rem;
+  transition: all 0.5s ease-in-out;
 }
-.skills::after {
+.au:hover {
+  height: 550px;
+  transition: all 0.5s ease-in-out;
+}
+.au::before {
   content: "";
-  height: 100%;
-  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(255, 177, 66, 0.9);
-  z-index: 1;
-}
-.skills:hover .skills::after {
-  background: transparent;
-}
-.experience {
-  background-image: url("../image/experience.jpg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: 2;
-}
-.experience::after {
-  content: "";
   height: 100%;
   width: 100%;
+  background: #00000099;
+  transition: all 0.5s ease-in-out;
+}
+.au:hover::before {
+  background: #00000000;
+  transition: all 0.5s ease-in-out;
+}
+.pilot {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../image/pilot.jpg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0rem 0rem 0rem 0rem;
+  transition: all 0.5s ease-in-out;
+}
+.pilot::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(186, 220, 88, 0.9);
-  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: #00000099;
+  transition: all 0.5s ease-in-out;
 }
-.experience:hover .experience::after {
-  background: transparent;
+.pilot:hover::before {
+  background: #00000000;
+  transition: all 0.5s ease-in-out;
+}
+.pilot:hover {
+  height: 550px;
+  transition: all 0.5s ease-in-out;
 }

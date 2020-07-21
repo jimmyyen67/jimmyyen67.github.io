@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.header {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 35%;
+  background: rgba(0, 0, 0, 1);
+  background-image: url("../image/bg.png");
+  background-size: 225%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.main {
+  margin-left: 35%;
+  height: 200vh;
+  width: 65%;
+  padding: 8rem 8rem 8rem 8rem;
+  vertical-align: baseline;
+}

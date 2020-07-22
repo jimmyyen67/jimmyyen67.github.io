@@ -59,8 +59,8 @@
   margin-bottom: 1rem;
   list-style: none;
 }
-.icon li a{
-padding:.5rem;
+.icon li a {
+  padding: 0.5rem;
 }
 .icon li a,
 .copyright li a {
@@ -241,4 +241,15 @@ padding:.5rem;
   border: 2px solid #333;
   color: #333;
   transition: all 0.3s ease-in-out;
+}
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+.hrefImg{
+  position: relative;
+  height: 300px;
+  width: 450px;
+  margin: 2rem 0rem 2rem 0rem;
+  border-radius: 5px;
 }

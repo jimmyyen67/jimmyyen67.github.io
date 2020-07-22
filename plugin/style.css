@@ -10,17 +10,54 @@
   left: 0%;
   top: 0%;
   height: 100%;
-  width: 35%;
+  width: 30%;
   background: rgba(0, 0, 0, 1);
   background-image: url("../image/bg.png");
   background-size: 225%;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 4rem 2rem;
+}
+.header > * {
+  flex-shrink: 0;
+}
+.inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-grow: 2;
+}
+.footer{
+  width: 100%;
+  flex-grow: 1;
+}
+.profilePic {
+  height: 150px;
+  width: 150px;
+  background-image: url("../image/mypic.jpg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.inner h3 {
+  color: #bdc3c7;
+  text-align: right;
+  width: 70%;
+}
+.name {
+  color: #ecf0f1;
+  font-weight: bold;
 }
 .main {
-  margin-left: 35%;
+  margin-left: 30%;
   height: 300vh;
-  width: 65%;
+  width: 70%;
   padding: 8rem 12rem 8rem 8rem;
   vertical-align: baseline;
 }
@@ -94,10 +131,10 @@
   margin: auto;
   background: #00000055;
   padding: 1rem;
-  opacity: .1;
+  opacity: 0.1;
   transition: all 0.5s ease-in-out;
 }
-.au:hover div{
+.au:hover div {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
@@ -134,16 +171,16 @@
   background: #00000000;
   transition: all 0.5s ease-in-out;
 }
-.pilot div{
+.pilot div {
   width: 60%;
   color: white;
   margin: auto;
   background: #00000055;
   padding: 1rem;
-  opacity: .1;
+  opacity: 0.1;
   transition: all 0.5s ease-in-out;
 }
-.pilot:hover div{
+.pilot:hover div {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }

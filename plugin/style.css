@@ -63,7 +63,7 @@
   padding: 0.5rem;
 }
 .icon li a,
-.copyright li a {
+.reference li a {
   color: #b2bec3;
   opacity: 0.5;
   list-style: none;
@@ -71,28 +71,38 @@
 }
 .icon li a:visited,
 .icon li a:active,
-.copyright li a:visited,
-.copyright li a:active {
+.reference li a:visited,
+.reference li a:active {
   opacity: 0.5;
   color: #b2bec3;
 }
 .icon li a:hover,
-.copyright li a:hover {
+.reference li a:hover {
   color: #f5f6fa;
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-.copyright {
+.reference {
   display: flex;
   justify-content: flex-end;
-  font-size: x-small;
+  font-size: 14px;
   font-weight: bold;
   color: #b2bec3;
   list-style: none;
 }
-.copyright li {
+.reference li {
   padding: 0 0.5rem;
   border-left: 1.5px solid #b2bec3;
+}
+.copyright{
+  display: flex;
+  justify-content: flex-end;
+  color: #b2bec3;
+  list-style: none;
+  font-weight: bold;
+}
+.copyright li{
+  padding: .5rem;
 }
 .main {
   margin-left: 30%;

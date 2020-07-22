@@ -246,10 +246,37 @@
   display: flex;
   justify-content: space-between;
 }
-.hrefImg{
+.href {
   position: relative;
+  display: inline-block;
   height: 300px;
   width: 450px;
   margin: 2rem 0rem 2rem 0rem;
+  border-radius: 5px;
+}
+.hrefImg {
+  height: 100%;
+  width: 100%;
+}
+.href::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #33333388;
+  opacity: 0;
+}
+.href::after {
+  content: "VIEW";
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 3px solid #111;
+  background: #33333388;
+  padding: .5rem 1rem;
   border-radius: 5px;
 }

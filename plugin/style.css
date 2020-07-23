@@ -107,7 +107,7 @@
 }
 .main {
   margin-left: 30%;
-  height: 500vh;
+  height: 700vh;
   width: 70%;
   padding: 8rem 12rem 8rem 8rem;
   vertical-align: baseline;
@@ -130,26 +130,28 @@
 .sectionOne h4 {
   text-align: center;
   line-height: 3rem;
+  color: #4b4b4b;
 }
 .likes {
   margin-left: auto;
   cursor: pointer;
   margin-bottom: 4rem;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .cloudIcon {
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
+  color: #4b4b4b;
 }
 .sectionOne button {
   padding: 1rem 1.5rem;
   margin: 2rem 0rem 0rem 0rem;
   outline: none;
   background: transparent;
-  opacity: 0.7;
+  opacity: 0.9;
   border: 2px solid #999;
-  color: #999;
+  color: #333;
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -162,19 +164,16 @@
 }
 .lane {
   height: 30vh;
-  width: 2px;
-  background: #999;
+  width: 3px;
+  background: #33333388;
   margin: auto;
-  opacity: 0.7;
 }
-.sectionOne button:hover ~ .lane {
-  opacity: 1;
-}
+
 .sectionTwo {
   margin-bottom: 2rem;
   border-bottom: 3px solid #33333388;
 }
-.sectionTwo h1{
+.sectionTwo h1 {
   padding-top: 2rem;
 }
 .au {
@@ -278,7 +277,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 2rem 0rem;
   transition: all 0.5s ease-in-out;
   display: flex;
 }
@@ -322,7 +321,7 @@
   background: transparent;
   opacity: 0.7;
   border: 2px solid #999;
-  color: #999;
+  color: #333;
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -333,12 +332,13 @@
   color: #333;
   transition: all 0.3s ease-in-out;
 }
-.sectionThree h1{
+.sectionThree h1 {
   padding-top: 2rem;
 }
 .portfolio {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 .href {
   position: relative;
@@ -384,5 +384,42 @@
 }
 .href:hover::after {
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.card {
+  width: 450px;
+  padding-bottom: 2rem;
+}
+.card h2 a:hover {
+  transform: scale(1.1);
+}
+.sectionThree{
+  border-bottom: 3px solid #33333388;
+}
+.sectionThree h2,
+.sectionThree h4 {
+  margin-bottom: 1rem;
+  color: #4b4b4b;
+}
+.sectionThree p {
+  line-height: 1.5rem;
+  color: #4b4b4b;
+}
+.sectionThree button {
+  padding: 0.5rem 0.5rem;
+  margin: 2rem 0rem;
+  outline: none;
+  background: transparent;
+  opacity: 0.7;
+  border: 2px solid #999;
+  color: #333;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.sectionThree button:hover {
+  opacity: 1;
+  border: 2px solid #333;
+  color: #333;
   transition: all 0.3s ease-in-out;
 }

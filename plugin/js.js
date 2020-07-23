@@ -24,6 +24,11 @@ function toSectionThree() {
     scrollTop: ($('#sectionThree').offset().top)
   }, 500);
 }
+function toSectionFour() {
+  $('html, body').animate({
+    scrollTop: ($('#sectionFour').offset().top)
+  }, 500);
+}
 
 likes();
 function likes() {

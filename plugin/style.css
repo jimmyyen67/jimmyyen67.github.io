@@ -107,7 +107,7 @@
 }
 .main {
   margin-left: 30%;
-  height: 300vh;
+  height: 500vh;
   width: 70%;
   padding: 8rem 12rem 8rem 8rem;
   vertical-align: baseline;
@@ -135,6 +135,7 @@
   margin-left: auto;
   cursor: pointer;
   margin-bottom: 4rem;
+  transition: all .5s ease-in-out;
 }
 .cloudIcon {
   text-align: center;
@@ -173,10 +174,13 @@
   margin-bottom: 2rem;
   border-bottom: 3px solid #33333388;
 }
+.sectionTwo h1{
+  padding-top: 2rem;
+}
 .au {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-image: url("../image/australia.jpg");
   background-size: 80%;
   background-position: center;
@@ -222,7 +226,7 @@
 .pilot {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-image: url("../image/pilot.jpg");
   background-size: 80%;
   background-position: center;
@@ -268,7 +272,7 @@
 .program {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-image: url("../image/coding.jpg");
   background-size: 80%;
   background-position: center;
@@ -329,6 +333,9 @@
   color: #333;
   transition: all 0.3s ease-in-out;
 }
+.sectionThree h1{
+  padding-top: 2rem;
+}
 .portfolio {
   display: flex;
   justify-content: space-between;
@@ -353,7 +360,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #33333388;
+  background: #33333399;
   opacity: 0;
 }
 .href::after {
@@ -366,6 +373,7 @@
   transform: translate(-50%, -50%);
   background: #33333399;
   padding: 0.5rem 1rem;
+  border: 3px solid #d1ccc0;
   border-radius: 5px;
   opacity: 0;
   transition: all 0.3s ease-in-out;

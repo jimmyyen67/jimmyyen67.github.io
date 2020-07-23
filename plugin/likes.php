@@ -16,7 +16,7 @@
   $res = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
   if (empty($_GET['action'])) {
   ?>
-    <i class="far fa-thumbs-up"></i> <?= $res['likes'] ?> likes.
+    <i class="far fa-2x fa-thumbs-up"></i> <?= $res['likes'] ?> likes.
     <?php
   } else {
     $action = $_GET['action'];
@@ -26,14 +26,14 @@
       $sql = "UPDATE `thumbsUP` SET `likes` = '$likes' WHERE 1";
       $pdo->exec($sql);
     ?>
-      <i class="fas fa-thumbs-up" style="color:#227093"></i> <?= $likes ?> likes.
+      <i class="fas fa-2x fa-thumbs-up" style="color:#227093"></i> <?= $likes ?> likes.
     <?php
     } else {
       $likes = $res['likes'] - 1;
       $sql = "UPDATE `thumbsUP` SET `likes` = '$likes' WHERE 1";
       $pdo->exec($sql);
     ?>
-      <i class="far fa-thumbs-up"></i> <?= $likes ?> likes.
+      <i class="far fa-2x fa-thumbs-up"></i> <?= $likes ?> likes.
   <?php
     }
   }

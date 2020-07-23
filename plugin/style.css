@@ -127,10 +127,39 @@
   margin-bottom: 2rem;
 }
 .sectionOne h1,
-.sectionOne h4 {
+.sectionOne h4,
+.sectionOne h5 {
   text-align: center;
   line-height: 3rem;
   color: #4b4b4b;
+}
+.gitpage {
+  text-decoration: none;
+  color: #555;
+  position: relative;
+  font-weight: bold;
+}
+.gitpage:active,
+.gitpage:visited {
+  color: #555;
+}
+.gitpage:hover{
+  color: #333;
+}
+.gitpage::after {
+  content: "";
+  width: 105%;
+  height: 50%;
+  background: #ff9f1a55;
+  position: absolute;
+  left: 0;
+  bottom: -2%;
+  transition: all .3s ease-in-out;
+}
+.gitpage:hover::after{
+  height: 15%;
+  bottom: 0%;
+  transition: all .3s ease-in-out;
 }
 .likes {
   margin-left: auto;
@@ -393,7 +422,7 @@
 .card h2 a:hover {
   transform: scale(1.1);
 }
-.sectionThree{
+.sectionThree {
   border-bottom: 3px solid #33333388;
 }
 .sectionThree h2,

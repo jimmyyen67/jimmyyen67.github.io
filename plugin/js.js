@@ -24,3 +24,21 @@ function toSectionThree() {
     scrollTop: ($('#sectionThree').offset().top)
   }, 500);
 }
+
+likes();
+function likes() {
+  $.get("./plugin/likes.php", {}, function (likes) {
+    $("#likes").html(likes);
+  })
+}
+$("#likes").on("click", function () {
+  let action = $("#likes").data("action");
+  $.get("./plugin/likes.php", { action }, function (likes) {
+    if (action == "like") {
+      $("#likes").data("action","unlike");
+    } else {
+      $("#likes").data("action","like");
+    }
+    $("#likes").html(likes);
+  })
+})

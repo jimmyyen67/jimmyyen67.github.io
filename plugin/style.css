@@ -64,7 +64,7 @@
 }
 .icon li a,
 .reference li a {
-  color: #b2bec3;
+  color: #f7f1e3;
   opacity: 0.5;
   list-style: none;
   transition: all 0.3s ease-in-out;
@@ -74,7 +74,7 @@
 .reference li a:visited,
 .reference li a:active {
   opacity: 0.5;
-  color: #b2bec3;
+  color: #f7f1e3;
 }
 .icon li a:hover,
 .reference li a:hover {
@@ -85,7 +85,7 @@
 .reference {
   display: flex;
   justify-content: flex-end;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #b2bec3;
   list-style: none;
@@ -94,15 +94,16 @@
   padding: 0 0.5rem;
   border-left: 1.5px solid #b2bec3;
 }
-.copyright{
+.copyright {
   display: flex;
   justify-content: flex-end;
   color: #b2bec3;
   list-style: none;
   font-weight: bold;
+  font-size: 13px;
 }
-.copyright li{
-  padding: .5rem;
+.copyright li {
+  padding: 0.5rem;
 }
 .main {
   margin-left: 30%;
@@ -112,32 +113,62 @@
   vertical-align: baseline;
 }
 .sectionOne {
+  /* height: 50vh; */
   margin-bottom: 2rem;
+  padding: 4rem 0rem 0rem 0rem;
   border-bottom: 3px solid #33333388;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.sectionOne h1,
 .sectionOne p,
 .sectionOne button {
   margin-bottom: 2rem;
 }
+.sectionOne h1,
+.sectionOne h4 {
+  text-align: center;
+  line-height: 3rem;
+}
+.likes {
+  margin-left: auto;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+.cloudIcon {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+}
 .sectionOne button {
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0rem 0rem 0rem;
   outline: none;
   background: transparent;
-  opacity: 0.5;
+  opacity: 0.7;
   border: 2px solid #999;
   color: #999;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .sectionOne button:hover {
-  opacity: 0.8;
+  opacity: 1;
   border: 2px solid #333;
   color: #333;
   transition: all 0.3s ease-in-out;
 }
-
+.lane {
+  height: 30vh;
+  width: 2px;
+  background: #999;
+  margin: auto;
+  opacity: 0.7;
+}
+.sectionOne button:hover ~ .lane {
+  opacity: 1;
+}
 .sectionTwo {
   margin-bottom: 2rem;
   border-bottom: 3px solid #33333388;
@@ -285,15 +316,15 @@
   margin: 2rem 0rem;
   outline: none;
   background: transparent;
-  opacity: 0.5;
+  opacity: 0.7;
   border: 2px solid #999;
   color: #999;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .sectionTwo button:hover {
-  opacity: 0.8;
+  opacity: 1;
   border: 2px solid #333;
   color: #333;
   transition: all 0.3s ease-in-out;
@@ -332,7 +363,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #33333399;
   padding: 0.5rem 1rem;
   border-radius: 5px;

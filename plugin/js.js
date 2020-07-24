@@ -40,10 +40,14 @@ $("#likes").on("click", function () {
   let action = $("#likes").data("action");
   $.get("./plugin/likes.php", { action }, function (likes) {
     if (action == "like") {
-      $("#likes").data("action","unlike");
+      $("#likes").data("action", "unlike");
     } else {
-      $("#likes").data("action","like");
+      $("#likes").data("action", "like");
     }
     $("#likes").html(likes);
   })
 })
+
+function displayPS(id) {
+  $(`#${id}`).fadeToggle();
+}

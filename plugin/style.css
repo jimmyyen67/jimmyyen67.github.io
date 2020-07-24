@@ -143,7 +143,7 @@
 .gitpage:visited {
   color: #555;
 }
-.gitpage:hover{
+.gitpage:hover {
   color: #333;
 }
 .gitpage::after {
@@ -154,12 +154,12 @@
   position: absolute;
   left: 0;
   bottom: -2%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.gitpage:hover::after{
+.gitpage:hover::after {
   height: 15%;
   bottom: 0%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .likes {
   margin-left: auto;
@@ -414,6 +414,123 @@
 .href:hover::after {
   opacity: 1;
   transition: all 0.3s ease-in-out;
+}
+.psImg1,
+.psImg2,
+.psImg3 {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  width: 450px;
+  margin: 2rem 0rem 2rem 0rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #333;
+}
+.psImg1 {
+  background-image: url(../image/ps1.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.psImg2 {
+  background-image: url(../image/ps2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.psImg3 {
+  background-image: url(../image/ps3.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.psImg1:hover,
+.psImg2:hover,
+.psImg3:hover {
+  cursor: pointer;
+}
+.psImg1::before,
+.psImg2::before,
+.psImg3::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #33333399;
+  opacity: 0;
+}
+.psImg1::after,
+.psImg2::after,
+.psImg3::after {
+  content: "VIEW";
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #33333399;
+  padding: 0.5rem 1rem;
+  border: 3px solid #d1ccc0;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.psImg1:hover::before,
+.psImg2:hover::before,
+.psImg3:hover::before {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.psImg1:hover::after,
+.psImg2:hover::after,
+.psImg3:hover::after {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.displayPS1 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 100vh;
+  width: 100vw;
+  background: #33333399;
+  transform: translate(-50%, -50%);
+  background-image: url(../image/ps1.jpg);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.displayPS2 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 100vh;
+  width: 100vw;
+  background: #33333377;
+  transform: translate(-50%, -50%);
+  background-image: url(../image/ps2.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.displayPS3 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 100vh;
+  width: 100vw;
+  background: #33333377;
+  transform: translate(-50%, -50%);
+  background-image: url(../image/ps3.jpg);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 .card {
   width: 450px;

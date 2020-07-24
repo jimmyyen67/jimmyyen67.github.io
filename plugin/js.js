@@ -13,21 +13,25 @@ $(window).scroll(function () {
   }
   position = scroll;
 });
-
+$("#goseek").on("click",()=>{
+  $('html, body').animate({
+    scrollTop: ($('#sectionOne').offset().top)
+  }, 700);
+})
 function toSectionTwo() {
   $('html, body').animate({
     scrollTop: ($('#sectionTwo').offset().top)
-  }, 500);
+  }, 700);
 }
 function toSectionThree() {
   $('html, body').animate({
     scrollTop: ($('#sectionThree').offset().top)
-  }, 500);
+  }, 700);
 }
 function toSectionFour() {
   $('html, body').animate({
     scrollTop: ($('#sectionFour').offset().top)
-  }, 500);
+  }, 700);
 }
 
 likes();

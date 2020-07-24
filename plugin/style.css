@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.5em;
+  line-height: 2em;
   font-family: "Noto Sans TC", sans-serif;
 }
 .header {
@@ -56,7 +56,7 @@
 .contact ul li div {
   height: 30px;
   width: 30px;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   text-align: center;
 }
 .footer {
@@ -131,6 +131,12 @@
 }
 .copyright li {
   padding: 0.5rem;
+}
+.copyright li br {
+  display: none;
+}
+.goseek{
+  display:none;
 }
 .main {
   margin-left: 30%;
@@ -396,6 +402,10 @@
   justify-content: space-between;
   flex-flow: row wrap;
 }
+.card {
+  width: 450px;
+  padding-bottom: 2rem;
+}
 .href {
   position: relative;
   display: inline-block;
@@ -517,12 +527,13 @@
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
+
 .displayPS1 {
   position: fixed;
   left: 50%;
   top: 50%;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background: #33333399;
   transform: translate(-50%, -50%);
   background-image: url(../image/ps1.jpg);
@@ -535,7 +546,7 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: #33333377;
   transform: translate(-50%, -50%);
@@ -549,7 +560,7 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: #33333377;
   transform: translate(-50%, -50%);
@@ -558,10 +569,6 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 10;
-}
-.card {
-  width: 450px;
-  padding-bottom: 2rem;
 }
 .card h2 a:hover {
   transform: scale(1.1);
@@ -596,4 +603,259 @@
   border: 2px solid #333;
   color: #333;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1680px) {
+  .main {
+    padding: 6rem 4rem 6rem 4rem;
+  }
+  .au,
+  .pilot,
+  .program {
+    width: 100%;
+    background-size: 100%;
+  }
+  .card {
+    width: 400px;
+  }
+  .href {
+    height: 267px;
+    width: 400px;
+  }
+  .psImg1,
+  .psImg2,
+  .psImg3 {
+    height: 267px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1560px) {
+  .icon {
+    transform: scale(0.9);
+  }
+  .icon li {
+    width: fit-content;
+    height: fit-content;
+  }
+  .reference {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .reference {
+    flex-flow: column wrap;
+    font-size: 14px;
+    align-items: flex-end;
+  }
+  .reference li {
+    width: 145px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .header {
+    width: 25%;
+  }
+  .main {
+    margin-left: 25%;
+    width: 75%;
+  }
+  .au,
+  .pilot,
+  .program {
+    width: 100%;
+    background-size: 110%;
+  }
+  .au div,
+  .pilot div,
+  .program div {
+    background: #00000099;
+  }
+  .icon,
+  .reference,
+  .copytight {
+    padding-bottom: 0.5rem;
+  }
+  .copyright li {
+    text-align: right;
+  }
+  .copyright li br {
+    display: initial;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/mobileBackground.jpg);
+    background-size: cover;
+    padding-top: 1rem;
+  }
+  .inner {
+    align-items: center;
+    flex-grow: 1;
+  }
+  .profilePic {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .inner div h3 {
+    position: relative;
+    margin:auto;
+    display: inline-block;
+    padding: 0.3rem 0rem 0.3rem 0.3rem;
+    margin-bottom: 0.5rem;
+    color: #f7f1e3;
+    font-size: medium;
+    text-align: center;
+    background-color: #222;
+  }
+  .contact {
+    flex-grow: 1;
+  }
+  .contact ul {
+    color: #f7f1e3;
+  }
+  .contact ul li {
+    padding: 0;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 0.1rem;
+    font-weight: initial;
+  }
+  .contact ul li:hover {
+    transform: scale(1);
+    font-weight: bold;
+    color: #bdc3c7;
+    padding: 0.3rem;
+    font-size: medium;
+  }
+  .icon {
+    display: none;
+  }
+
+  .reference,
+  .copyright {
+    display: none;
+  }
+  .goseek {
+    display:block;
+    padding: .5rem 1.5rem;
+    border: 2px solid #EEE;
+    background: #3d3d3d;
+    color:#d2dae2;
+    font-weight: bold;
+    font-size: large;
+    outline:none;
+  }
+  .main {
+    margin: 0;
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .lane {
+    display: none;
+  }
+  .sectionOne {
+    height:100vh;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .cloudIcon {
+    margin-top:2rem;
+  }
+  .likes {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    padding:0rem 1rem;
+  }
+  .sectionOne button {
+    padding: .5rem 1rem;
+    margin: 6rem 0rem 0rem 0rem;
+    font-weight: bold;
+    font-size: large;
+  }
+  .au,
+  .pilot,
+  .program {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+  }
+  .au::before,
+  .pilot::before,
+  .program::before {
+    display: none;
+  }
+  .au div,
+  .pilot div,
+  .program div {
+    opacity: 1;
+    width: 85%;
+  }
+.sectionTwo button {
+    padding: 1rem 1.5rem;
+    margin: 5rem 0rem;
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+  .card h2 a{
+    display: none;
+  }
+  .href {
+    width: 100%;
+    height: auto;
+  }
+  .psImg1,
+  .psImg2,
+  .psImg3 {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .totop {
+    margin-bottom: 2rem;
+  }
+  .displayPS1,
+  .displayPS2,
+  .displayPS3 {
+    background-size: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .header{
+    padding: 2rem 2rem;
+    height: 667px;
+  }
+  .profilePic {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .sectionOne{
+    height: 667px;
+  }
+  .likes {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .sectionOne button {
+    margin: 2rem 0rem 3rem 0rem;
+    font-weight: bold;
+    font-size: large;
+  }
 }

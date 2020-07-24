@@ -51,3 +51,9 @@ $("#likes").on("click", function () {
 function displayPS(id) {
   $(`#${id}`).fadeToggle();
 }
+
+$("#totop").on("click", function () {
+  $('html, body').animate({
+    scrollTop: (0)
+  }, 1000);
+})

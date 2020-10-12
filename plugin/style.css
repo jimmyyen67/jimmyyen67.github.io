@@ -135,8 +135,8 @@
 .copyright li br {
   display: none;
 }
-.goseek{
-  display:none;
+.goseek {
+  display: none;
 }
 .main {
   margin-left: 30%;
@@ -527,7 +527,10 @@
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-
+.muted {
+  font-size: small;
+  color: #666;
+}
 .displayPS1 {
   position: fixed;
   left: 50%;
@@ -704,7 +707,7 @@
   }
   .inner div h3 {
     position: relative;
-    margin:auto;
+    margin: auto;
     display: inline-block;
     padding: 0.3rem 0rem 0.3rem 0.3rem;
     margin-bottom: 0.5rem;
@@ -743,14 +746,14 @@
     display: none;
   }
   .goseek {
-    display:block;
-    padding: .5rem 1.5rem;
-    border: 2px solid #EEE;
+    display: block;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #eee;
     background: #3d3d3d;
-    color:#d2dae2;
+    color: #d2dae2;
     font-weight: bold;
     font-size: large;
-    outline:none;
+    outline: none;
   }
   .main {
     margin: 0;
@@ -761,21 +764,21 @@
     display: none;
   }
   .sectionOne {
-    height:100vh;
+    height: 100vh;
     padding-top: 2rem;
     margin-bottom: 1rem;
   }
   .cloudIcon {
-    margin-top:2rem;
+    margin-top: 2rem;
   }
   .likes {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 1rem;
-    padding:0rem 1rem;
+    padding: 0rem 1rem;
   }
   .sectionOne button {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 6rem 0rem 0rem 0rem;
     font-weight: bold;
     font-size: large;
@@ -798,7 +801,7 @@
     opacity: 1;
     width: 85%;
   }
-.sectionTwo button {
+  .sectionTwo button {
     padding: 1rem 1.5rem;
     margin: 5rem 0rem;
     font-weight: bold;
@@ -806,13 +809,13 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
+  }
 
   .card {
     width: 90%;
     margin: auto;
   }
-  .card h2 a{
+  .card h2 a {
     display: none;
   }
   .href {
@@ -837,7 +840,7 @@
   }
 }
 @media screen and (max-width: 380px) {
-  .header{
+  .header {
     padding: 2rem 2rem;
     height: 667px;
   }
@@ -845,7 +848,7 @@
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
   }
-  .sectionOne{
+  .sectionOne {
     height: 667px;
   }
   .likes {
